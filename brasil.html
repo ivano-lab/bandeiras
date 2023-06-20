@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhando</title>
+</head>
+<body>
+    <canvas id="tela" width="600" height="400"></canvas>
+
+    <script>
+        var tela = document.getElementById("tela");
+        var c = tela.getContext("2d");
+
+        c.fillStyle='white';
+        c.fillRect(0, 0, 600, 400);
+
+        c.fillStyle='#05A62D';
+        c.fillRect(0, 0, 600, 400);
+
+        c.fillStyle="white";
+        c.beginPath();
+        c.moveTo(300, 50);
+        c.lineTo(100, 200);
+        c.lineTo(500, 200);
+        c.fill();
+
+        c.fillStyle="white";
+        c.beginPath();
+        c.moveTo(300, 350);
+        c.lineTo(100, 200);
+        c.lineTo(500, 200);
+        c.fill();
+
+        c.fillStyle="#F2CD13";
+        c.beginPath();
+        c.moveTo(300, 50);
+        c.lineTo(100, 200);
+        c.lineTo(500, 200);
+        c.fill();
+
+        c.fillStyle="#F2CD13";
+        c.beginPath();
+        c.moveTo(300, 350);
+        c.lineTo(100, 200);
+        c.lineTo(500, 200);
+        c.fill();
+
+        c.fillStyle="#0E2773";
+        c.beginPath();
+        c.arc(300, 200, 100, 0, 2*Math.PI);
+        c.fill();
+             
+        c.beginPath();
+        c.arc(287, 280, 130, 1.23 * Math.PI, 1.86 * Math.PI, false);
+        c.lineWidth = 20;
+        c.strokeStyle = "white";
+        c.stroke();
+
+        c.beginPath();
+        c.arc(300, 200, 110, 0, 2*Math.PI);
+        c.strokeStyle = "#F2CD13";
+        c.stroke();
+
+    </script>
+</body>
+</html>

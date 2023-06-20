@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhando</title>
+</head>
+<body>
+    <canvas id="tela" width="600" height="400"></canvas>
+
+    <script>
+        var tela = document.getElementById("tela");
+        var c = tela.getContext("2d");
+
+        c.fillStyle='orange';
+        c.fillRect(0, 0, 600, 140);
+
+        c.fillStyle='white';
+        c.fillRect(0, 200, 600, 100);
+
+        c.fillStyle='#42f548';
+        c.fillRect(0, 260, 600, 200);
+
+        c.fillStyle="orange";
+        c.beginPath();
+        c.arc(300, 200, 50, 0, 2*Math.PI);
+        c.fill();
+
+    </script>
+</body>
+</html>
